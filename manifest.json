@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Add a side bar to the of Sublime Text 3's API web page",
+    "description": "Math2001 extension",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "st-dev.png"
+    },
+    "permissions": [
+        "http://*/*"
+    ],
+    "content_scripts": [
+        {
+            "css": ["style.css"],
+            "matches": [ "http://www.sublimetext.com/docs/3/api_reference.html" ]
+        }
+    ]
+}

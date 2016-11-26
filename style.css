@@ -1,0 +1,37 @@
+section {
+    margin-left: 20px !important;
+    overflow: auto;
+    position: relative;
+    max-width: none !important;
+    transition: all .5s;
+}
+section table {
+    width: 100%;
+    display: table;
+}
+
+header + section {
+    position: fixed;
+    margin-left: 0 !important;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #fffe;
+    padding: 5px;
+    width: 340px;
+    left: -320px;
+    transition: all .5s;
+    overflow: hidden;
+    background: #DAE1E3;
+    box-shadow: 0 0 20px #aaa;
+}
+header + section:hover {
+    left: 0;
+    overflow: auto;
+    background: #FFF;
+    box-shadow: 0 0 20px #aaa;
+}
+
+header + section:hover ~ section {
+    margin-left: 340px !important;
+}
