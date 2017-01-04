@@ -12,7 +12,8 @@
     "content_scripts": [
         {
             "css": ["style.css"],
-            "matches": [ "http://www.sublimetext.com/docs/3/api_reference.html" ]
+            "matches": [ "http://www.sublimetext.com/docs/3/api_reference.html",
+                         "file:///C:/wamp/www/chrome-extensions/sublime-api/testr/API%20Reference%20%E2%80%93%20Sublime%20Text%203%20Documentation.html" ]
         }
     ]
 }
